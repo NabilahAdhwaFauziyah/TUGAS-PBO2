@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 43 - Bilangan Terkecil</title>
+</head>
+<body>
+    <h3>Soal 43 - Bilangan Terkecil</h3>
+    <p>Masukkan minimal 10 angka, pisahkan dengan spasi:</p><p><input id="angka" type="text" size="60"></p>
+    <p><button onclick="proses()">Proses</button></p>
+    <pre id="hasil"></pre>
+    <script>
+    function proses() {
+        let angka = document.getElementById("angka").value.trim().split(/\s+/).map(Number);
+let hasil;
+if (angka.length < 10) hasil = "Masukkan minimal 10 angka.";
+else { hasil = Math.min(...angka); }
+document.getElementById("hasil").textContent = hasil;
+    }
+    </script>
+</body>
+</html>

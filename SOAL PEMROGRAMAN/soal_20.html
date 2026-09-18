@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 20 - Deret n+1, n+2, n+3</title>
+</head>
+<body>
+    <h3>Soal 20 - Deret n+1, n+2, n+3</h3>
+    <p>Jumlah angka: <input id="jumlah" type="number" value="13"></p>
+    <p><button onclick="proses()">Proses</button></p>
+    <pre id="hasil"></pre>
+    <script>
+    function proses() {
+        let n = 1;
+let tambah = 1;
+let jumlah = Number(document.getElementById("jumlah").value);
+let hasil = "";
+for (let i = 0; i < jumlah; i++) {{ hasil += n + " "; n += tambah; tambah++; if (tambah > 3) tambah = 1; }}
+document.getElementById("hasil").textContent = hasil;
+    }
+    </script>
+</body>
+</html>

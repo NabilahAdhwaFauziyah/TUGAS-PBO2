@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 37 - Animasi Angka 0</title>
+</head>
+<body>
+    <h3>Soal 37 - Animasi Angka 0</h3>
+    <p>Kiri bawah ke kanan bawah dan kembali</p><p id="animasi" style="white-space: pre"></p>
+    <p><button onclick="proses()">Proses</button></p>
+    <pre id="hasil"></pre>
+    <script>
+    function proses() {
+        let posisi = 0;
+let arah = 1;
+clearInterval(window.timer);
+window.timer = setInterval(function() {
+document.getElementById("animasi").textContent = " ".repeat(posisi) + "0";
+posisi += arah;
+if (posisi >= 40 || posisi <= 0) arah *= -1;
+}, 100);
+    }
+    </script>
+</body>
+</html>

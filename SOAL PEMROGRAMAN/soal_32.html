@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 32 - Bilangan Habis Dibagi 6</title>
+</head>
+<body>
+    <h3>Soal 32 - Bilangan Habis Dibagi 6</h3>
+    <p>n awal: <input id="awal" type="number"></p><p>n akhir: <input id="akhir" type="number"></p>
+    <p><button onclick="proses()">Proses</button></p>
+    <pre id="hasil"></pre>
+    <script>
+    function proses() {
+        let awal = Number(document.getElementById("awal").value);
+let akhir = Number(document.getElementById("akhir").value);
+let hasil = "";
+for (let n = awal; n <= akhir; n++) if (n % 6 === 0) hasil += n + " ";
+document.getElementById("hasil").textContent = hasil;
+    }
+    </script>
+</body>
+</html>

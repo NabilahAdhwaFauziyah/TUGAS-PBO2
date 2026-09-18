@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 23 - Fibonacci</title>
+</head>
+<body>
+    <h3>Soal 23 - Fibonacci</h3>
+    <p>Nilai maksimum: <input id="maks" type="number" value="50"></p>
+    <p><button onclick="proses()">Proses</button></p>
+    <pre id="hasil"></pre>
+    <script>
+    function proses() {
+        let maks = Number(document.getElementById("maks").value);
+let a = 0, b = 1, hasil = "0";
+while (b <= maks) {{ hasil += ", " + b; let c = a + b; a = b; b = c; }}
+document.getElementById("hasil").textContent = hasil;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 47 - Total Bilangan Genap</title>
+</head>
+<body>
+    <h3>Soal 47 - Total Bilangan Genap</h3>
+    <p>n awal: <input id="awal" type="number"></p><p>n akhir: <input id="akhir" type="number"></p>
+    <p><button onclick="proses()">Proses</button></p>
+    <pre id="hasil"></pre>
+    <script>
+    function proses() {
+        let awal = Number(document.getElementById("awal").value), akhir = Number(document.getElementById("akhir").value), hasil = 0;
+for (let n = awal; n <= akhir; n++) if (n % 2 === 0) hasil += n;
+document.getElementById("hasil").textContent = hasil;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 18 - Deret n-3, n+5</title>
+</head>
+<body>
+    <h3>Soal 18 - Deret n-3, n+5</h3>
+    <p>Jumlah angka: <input id="jumlah" type="number" value="12"></p>
+    <p><button onclick="proses()">Proses</button></p>
+    <pre id="hasil"></pre>
+    <script>
+    function proses() {
+        let n = 5;
+let jumlah = Number(document.getElementById("jumlah").value);
+let hasil = "";
+for (let i = 0; i < jumlah; i++) {{ hasil += n + " "; if (i % 2 === 0) n -= 3; else n += 5; }}
+document.getElementById("hasil").textContent = hasil;
+    }
+    </script>
+</body>
+</html>

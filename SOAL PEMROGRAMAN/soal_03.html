@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 3 - Jumlah Karakter</title>
+</head>
+<body>
+    <h3>Soal 3 - Jumlah Karakter</h3>
+    <p><input id="kalimat" type="text"></p>
+    <p><button onclick="proses()">Proses</button></p>
+    <pre id="hasil"></pre>
+    <script>
+    function proses() {
+        let kalimat = document.getElementById("kalimat").value;
+document.getElementById("hasil").textContent = "Jumlah karakter: " + kalimat.length;
+    }
+    </script>
+</body>
+</html>

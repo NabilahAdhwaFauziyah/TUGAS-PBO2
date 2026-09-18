@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 22 - Faktorial</title>
+</head>
+<body>
+    <h3>Soal 22 - Faktorial</h3>
+    <p>n: <input id="n" type="number" value="3"></p>
+    <p><button onclick="proses()">Proses</button></p>
+    <pre id="hasil"></pre>
+    <script>
+    function proses() {
+        let n = Number(document.getElementById("n").value);
+let hasil = 1;
+let teks = "";
+for (let i = n; i >= 1; i--) {{ hasil *= i; teks += i; if (i > 1) teks += " x "; }}
+document.getElementById("hasil").textContent = n + "! = " + teks + " = " + hasil;
+    }
+    </script>
+</body>
+</html>

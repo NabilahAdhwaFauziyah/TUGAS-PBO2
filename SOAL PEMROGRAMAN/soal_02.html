@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 2 - Menghitung Huruf</title>
+</head>
+<body>
+    <h3>Soal 2 - Menghitung Huruf</h3>
+    <p>Kalimat: <input id="kalimat" type="text"></p><p>Huruf: <input id="huruf" type="text" maxlength="1"></p>
+    <p><button onclick="proses()">Proses</button></p>
+    <pre id="hasil"></pre>
+    <script>
+    function proses() {
+        let kalimat = document.getElementById("kalimat").value;
+let huruf = document.getElementById("huruf").value;
+let jumlah = 0;
+for (let i = 0; i < kalimat.length; i++) if (kalimat[i].toLowerCase() === huruf.toLowerCase()) jumlah++;
+document.getElementById("hasil").textContent = "Jumlah huruf: " + jumlah;
+    }
+    </script>
+</body>
+</html>

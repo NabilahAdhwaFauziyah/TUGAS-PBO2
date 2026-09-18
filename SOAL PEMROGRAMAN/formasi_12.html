@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soal 12 - Formasi Bintang</title>
+</head>
+<body>
+    <h3>Soal 12 - Formasi Bintang</h3>
+    <pre id="pola">00000000000
+**********0
+**********0
+**********0
+**********0
+**********0</pre>
+    <p><button onclick="proses()">Proses</button></p>
+    <pre id="hasil"></pre>
+    <script>
+    function proses() {
+        document.getElementById("hasil").textContent = document.getElementById("pola").textContent;
+    }
+    </script>
+</body>
+</html>
